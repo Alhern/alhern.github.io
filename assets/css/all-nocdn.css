@@ -7418,6 +7418,7 @@ article.post-micro {
 .metadata p,
 .translationslist p {
     display: inline;
+    color: #767F85;
 }
 
 .posttranslations h3, .translationslist h3 {
