@@ -3,32 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome to Nikola | A quality noob blog</title>
+<title>Remembering Mongo | A quality noob blog</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (fr)" href="../../fr/rss.xml">
-<link rel="canonical" href="https://alhern.github.io/posts/welcome-to-nikola/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Roberto Alsina">
-<link rel="next" href="../remembering-mongo/" title="Remembering Mongo" type="text/html">
+<link rel="canonical" href="https://alhern.github.io/posts/remembering-mongo/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Alhern">
+<link rel="prev" href="../welcome-to-nikola/" title="Welcome to Nikola" type="text/html">
 <meta property="og:site_name" content="A quality noob blog">
-<meta property="og:title" content="Welcome to Nikola">
-<meta property="og:url" content="https://alhern.github.io/posts/welcome-to-nikola/">
-<meta property="og:description" content="If you can see this in a web browser, it means you managed to install Nikola,
-and build a site using it. Congratulations!
-Next steps:
+<meta property="og:title" content="Remembering Mongo">
+<meta property="og:url" content="https://alhern.github.io/posts/remembering-mongo/">
+<meta property="og:description" content="Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
+Here's for Windows.
+First:
 
-Read the manual
-Visit the Nikola website to learn more
-See a demo">
+C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Use">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2012-03-30T23:00:00-03:00">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content="demo">
-<meta property="article:tag" content="nikola">
-<meta property="article:tag" content="python">
-<link rel="alternate" hreflang="fr" href="../../fr/posts/welcome-to-nikola/">
+<meta property="article:published_time" content="2017-06-14T16:15:08+02:00">
+<meta property="article:tag" content="mongo">
+<link rel="alternate" hreflang="fr" href="../../fr/posts/remembering-mongo/">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -87,13 +82,13 @@ See a demo">
         <div class="row">
             
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Welcome to Nikola</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Remembering Mongo</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                    <a href="../../authors/roberto-alsina/">Roberto Alsina</a>
+                    <a href="../../authors/alhern/">Alhern</a>
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2012-03-30T23:00:00-03:00" itemprop="datePublished" title="2012-03-30 23:00">2012-03-30 23:00</time></a></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-06-14T16:15:08+02:00" itemprop="datePublished" title="2017-06-14 16:15">2017-06-14 16:15</time></a></p>
                 <p class="commentline">
         
 
@@ -102,38 +97,29 @@ See a demo">
         </p>
 <p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
 
-                    <p class="linkline"><a href="https://getnikola.com/">Original site</a></p>
         </div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="figure">
-<a class="reference external image-reference" href="https://farm1.staticflickr.com/138/352972944_4f9d568680_z.jpg?zz=1"><img alt="Nikola Tesla Corner by nicwest, on Flickr" class="thumbnail" src="https://farm1.staticflickr.com/138/352972944_4f9d568680.jpg"></a>
-</div>
-<p>If you can see this in a web browser, it means you managed to install Nikola,
-and build a site using it. Congratulations!</p>
-<p>Next steps:</p>
-<ul class="simple">
-<li><a class="reference external" href="../../pages/handbook/">Read the manual</a></li>
-<li><a class="reference external" href="https://getnikola.com">Visit the Nikola website to learn more</a></li>
-<li><a class="reference external" href="../../galleries/demo/">See a demo photo gallery</a></li>
-<li><a class="reference external" href="../../pages/listings-demo/">See a demo listing</a></li>
-<li><a class="reference external" href="../../pages/slides-demo/">See a demo slideshow</a></li>
-<li><a class="reference external" href="../../pages/dr-nikolas-vendetta/">See a demo of a longer text</a></li>
-</ul>
-<p>Send feedback to <a class="reference external" href="mailto:info@getnikola.com">info@getnikola.com</a>!</p>
+<p>Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
+Here's for Windows.</p>
+<p>First:</p>
+<pre class="literal-block">
+C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Users\[name]\mongo-data
+</pre>
+<p>Then simply:</p>
+<pre class="literal-block">
+C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe
+</pre>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/blog/" rel="tag">blog</a></li>
-            <li><a class="tag p-category" href="../../categories/demo/" rel="tag">demo</a></li>
-            <li><a class="tag p-category" href="../../categories/nikola/" rel="tag">nikola</a></li>
-            <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+<li><a class="tag p-category" href="../../categories/mongo/" rel="tag">mongo</a></li>
         </ul>
 <ul class="pager hidden-print">
-<li class="next">
-                <a href="../remembering-mongo/" rel="next" title="Remembering Mongo">Next post</a>
+<li class="previous">
+                <a href="../welcome-to-nikola/" rel="prev" title="Welcome to Nikola">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
