@@ -733,5 +733,20 @@ article.post-micro {
 }
 
 body {
-	background-color: pink;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+.metadata {
+	color: #767f85;
+}
+
+.container {
+	max-width: 750px;
+}
+
+.body-content {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
 }
