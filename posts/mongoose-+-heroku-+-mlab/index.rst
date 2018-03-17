@@ -12,6 +12,7 @@
 
     heroku config:set MONGOLAB_URI=mongodb://[username]:[password]@xx000000.mlab.com:00000/[project-name]
 
+
 2. Add to app.js::
 
     const mongodbUri = process.env.MONGOLAB_URI;
@@ -23,6 +24,7 @@
             console.log('success!!!!!!!!!');
         }
     });
+
 
 3. At the bottom::
 
