@@ -50,12 +50,18 @@
 <a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../rss.xml">RSS feed</a>
+<a href="../../rss.xml">RSS</a>
 
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right">
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="https://alhern.github.io/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="nav navbar-nav navbar-right">
 <li>
             </li>
 <li><a href="https://alhern.github.io/fr/" rel="alternate" hreflang="fr">Français</a></li>
@@ -89,20 +95,20 @@
 <noscript>
 <ul class="thumbnails">
 <li>
-<a href="tesla_lightning1_lg.jpg" class="thumbnail image-reference" title="Tesla lightning1 lg">
-            <img src="tesla_lightning1_lg.thumbnail.jpg" alt="Tesla lightning1 lg"></a>
-        </li>
-<li>
 <a href="tesla_lightning2_lg.jpg" class="thumbnail image-reference" title="Tesla lightning2 lg">
             <img src="tesla_lightning2_lg.thumbnail.jpg" alt="Tesla lightning2 lg"></a>
         </li>
 <li>
-<a href="tesla_tower1_lg.jpg" class="thumbnail image-reference" title="Tesla tower1 lg">
-            <img src="tesla_tower1_lg.thumbnail.jpg" alt="Tesla tower1 lg"></a>
+<a href="tesla_lightning1_lg.jpg" class="thumbnail image-reference" title="Tesla lightning1 lg">
+            <img src="tesla_lightning1_lg.thumbnail.jpg" alt="Tesla lightning1 lg"></a>
         </li>
 <li>
 <a href="tesla4_lg.jpg" class="thumbnail image-reference" title="Tesla4 lg">
             <img src="tesla4_lg.thumbnail.jpg" alt="Tesla4 lg"></a>
+        </li>
+<li>
+<a href="tesla_tower1_lg.jpg" class="thumbnail image-reference" title="Tesla tower1 lg">
+            <img src="tesla_tower1_lg.thumbnail.jpg" alt="Tesla tower1 lg"></a>
         </li>
 <li>
 <a href="tesla_conducts_lg.jpg" class="thumbnail image-reference" title="Tesla conducts lg">
@@ -115,7 +121,7 @@
         <!--End of body content-->
 
         <footer id="footer">
-            © 2018        on         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            © 2018        /         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>
@@ -126,7 +132,7 @@
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates --><script src="../../assets/js/flowr.plugin.js"></script><script>
-jsonContent = [{"size": {"h": 288, "w": 399}, "title": "Tesla lightning1 lg", "url": "tesla_lightning1_lg.jpg", "url_thumb": "tesla_lightning1_lg.thumbnail.jpg"}, {"size": {"h": 131, "w": 180}, "title": "Tesla lightning2 lg", "url": "tesla_lightning2_lg.jpg", "url_thumb": "tesla_lightning2_lg.thumbnail.jpg"}, {"size": {"h": 125, "w": 180}, "title": "Tesla tower1 lg", "url": "tesla_tower1_lg.jpg", "url_thumb": "tesla_tower1_lg.thumbnail.jpg"}, {"size": {"h": 180, "w": 128}, "title": "Tesla4 lg", "url": "tesla4_lg.jpg", "url_thumb": "tesla4_lg.thumbnail.jpg"}, {"size": {"h": 180, "w": 128}, "title": "Tesla conducts lg", "url": "tesla_conducts_lg.jpg", "url_thumb": "tesla_conducts_lg.thumbnail.jpg"}];
+jsonContent = [{"size": {"h": 131, "w": 180}, "title": "Tesla lightning2 lg", "url": "tesla_lightning2_lg.jpg", "url_thumb": "tesla_lightning2_lg.thumbnail.jpg"}, {"size": {"h": 288, "w": 399}, "title": "Tesla lightning1 lg", "url": "tesla_lightning1_lg.jpg", "url_thumb": "tesla_lightning1_lg.thumbnail.jpg"}, {"size": {"h": 180, "w": 128}, "title": "Tesla4 lg", "url": "tesla4_lg.jpg", "url_thumb": "tesla4_lg.thumbnail.jpg"}, {"size": {"h": 125, "w": 180}, "title": "Tesla tower1 lg", "url": "tesla_tower1_lg.jpg", "url_thumb": "tesla_tower1_lg.thumbnail.jpg"}, {"size": {"h": 180, "w": 128}, "title": "Tesla conducts lg", "url": "tesla_conducts_lg.jpg", "url_thumb": "tesla_conducts_lg.thumbnail.jpg"}];
 $("#gallery_container").flowr({
         data : jsonContent,
         height : 180*.6,
