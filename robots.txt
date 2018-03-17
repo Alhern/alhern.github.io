@@ -1,0 +1,4 @@
+Sitemap: https://alhern.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: alhern.github.io
