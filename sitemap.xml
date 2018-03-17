@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://alhern.github.io/archive.html</loc>
-  <lastmod>2018-03-17T17:25:00Z</lastmod>
+  <lastmod>2018-03-17T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/authors/</loc>
@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>https://alhern.github.io/fr/archive.html</loc>
-  <lastmod>2018-03-17T17:25:00Z</lastmod>
+  <lastmod>2018-03-17T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/authors/</loc>
@@ -256,9 +256,13 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/remembering-mongo/" />
  </url>
  <url>
+  <loc>https://alhern.github.io/fr/posts/renouveau/</loc>
+  <lastmod>2018-03-17T17:42:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/renouveau/" />
+ </url>
+ <url>
   <loc>https://alhern.github.io/fr/posts/welcome-to-nikola/</loc>
   <lastmod>2018-03-17T15:06:00Z</lastmod>
-  <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/welcome-to-nikola/" />
  </url>
  <url>
   <loc>https://alhern.github.io/galleries/</loc>
@@ -278,7 +282,7 @@
  </url>
  <url>
   <loc>https://alhern.github.io/listings/hello.py.html</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/pages/about-nikola/</loc>
@@ -351,6 +355,10 @@
  <url>
   <loc>https://alhern.github.io/posts/remembering-mongo/</loc>
   <lastmod>2018-03-17T17:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/posts/renouveau/</loc>
+  <lastmod>2018-03-17T17:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/posts/welcome-to-nikola/</loc>
