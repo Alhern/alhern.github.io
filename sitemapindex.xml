@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://alhern.github.io/authors/alhern.xml</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/authors/roberto-alsina.xml</loc>
@@ -26,8 +26,20 @@
   <lastmod>2018-03-17T15:07:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://alhern.github.io/categories/heroku.xml</loc>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://alhern.github.io/categories/mlab.xml</loc>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://alhern.github.io/categories/mongo.xml</loc>
   <lastmod>2018-03-17T17:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://alhern.github.io/categories/mongoose.xml</loc>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/categories/nikola.xml</loc>
@@ -39,7 +51,7 @@
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/fr/authors/alhern.xml</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/fr/authors/roberto-alsina.xml</loc>
@@ -58,8 +70,20 @@
   <lastmod>2018-03-17T15:07:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://alhern.github.io/fr/categories/heroku.xml</loc>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://alhern.github.io/fr/categories/mlab.xml</loc>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://alhern.github.io/fr/categories/mongo.xml</loc>
   <lastmod>2018-03-17T17:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://alhern.github.io/fr/categories/mongoose.xml</loc>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/fr/categories/nikola.xml</loc>
@@ -79,7 +103,7 @@
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/fr/rss.xml</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/galleries/demo/rss.xml</loc>
@@ -91,10 +115,10 @@
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/rss.xml</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://alhern.github.io/sitemap.xml</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:20:00Z</lastmod>
  </sitemap>
 </sitemapindex>

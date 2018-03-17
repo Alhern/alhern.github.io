@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A quality noob blog</title><link>https://alhern.github.io/</link><description>Et élucubrations diverses.</description><atom:link href="https://alhern.github.io/fr/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><copyright>Contents © 2018 &lt;a href="mailto:audev@protonmail.com"&gt;Alhern&lt;/a&gt; </copyright><lastBuildDate>Sat, 17 Mar 2018 17:13:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Remembering Mongo</title><link>https://alhern.github.io/fr/posts/remembering-mongo/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A quality noob blog</title><link>https://alhern.github.io/</link><description>Et élucubrations diverses.</description><atom:link href="https://alhern.github.io/fr/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><copyright>Contents © 2018 &lt;a href="mailto:audev@protonmail.com"&gt;Alhern&lt;/a&gt; </copyright><lastBuildDate>Sat, 17 Mar 2018 17:20:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mongoose + Heroku + mLab</title><link>https://alhern.github.io/fr/posts/mongoose-%2B-heroku-%2B-mlab/</link><dc:creator>Alhern</dc:creator><description>&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Configurate Heroku with:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+heroku config:set MONGOLAB_URI=mongodb://[username]:[password]@xx000000.mlab.com:00000/[project-name]
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add to app.js:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+const mongodbUri = process.env.MONGOLAB_URI;
+
+mongoose.connect(mongodbUri, (err, res) =&amp;gt; {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('success!!!!!!!!!');
+    }
+});
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;At the bottom:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+const port = process.env.PORT
+
+app.listen(process.env.PORT);
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description><guid>https://alhern.github.io/fr/posts/mongoose-%2B-heroku-%2B-mlab/</guid><pubDate>Tue, 27 Jun 2017 22:57:17 GMT</pubDate></item><item><title>Remembering Mongo</title><link>https://alhern.github.io/fr/posts/remembering-mongo/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
 Here's for Windows.&lt;/p&gt;
 &lt;p&gt;First:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;

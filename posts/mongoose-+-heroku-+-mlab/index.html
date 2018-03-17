@@ -3,28 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Remembering Mongo | A quality noob blog</title>
+<title>Mongoose + Heroku + mLab | A quality noob blog</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (fr)" href="../../fr/rss.xml">
-<link rel="canonical" href="https://alhern.github.io/posts/remembering-mongo/">
+<link rel="canonical" href="https://alhern.github.io/posts/mongoose-%2B-heroku-%2B-mlab/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Alhern">
-<link rel="prev" href="../welcome-to-nikola/" title="Welcome to Nikola" type="text/html">
-<link rel="next" href="../mongoose-%2B-heroku-%2B-mlab/" title="Mongoose + Heroku + mLab" type="text/html">
+<link rel="prev" href="../remembering-mongo/" title="Remembering Mongo" type="text/html">
 <meta property="og:site_name" content="A quality noob blog">
-<meta property="og:title" content="Remembering Mongo">
-<meta property="og:url" content="https://alhern.github.io/posts/remembering-mongo/">
-<meta property="og:description" content="Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
-Here's for Windows.
-First:
+<meta property="og:title" content="Mongoose + Heroku + mLab">
+<meta property="og:url" content="https://alhern.github.io/posts/mongoose-%2B-heroku-%2B-mlab/">
+<meta property="og:description" content="Configurate Heroku with:
 
-C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Use">
+heroku config:set MONGOLAB_URI=mongodb://[username]:[password]@xx000000.mlab.com:00000/[project-name]
+
+
+Add to app.js:
+
+const mongodbUri = process.env.MONGOLAB_URI;
+
+mongoose">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-06-14T16:15:08+02:00">
-<meta property="article:tag" content="mongo">
-<link rel="alternate" hreflang="fr" href="../../fr/posts/remembering-mongo/">
+<meta property="article:published_time" content="2017-06-28T00:57:17+02:00">
+<meta property="article:tag" content="heroku">
+<meta property="article:tag" content="mlab">
+<meta property="article:tag" content="mongoose">
+<link rel="alternate" hreflang="fr" href="../../fr/posts/mongoose-%2B-heroku-%2B-mlab/">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -68,7 +74,7 @@ C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Use">
                 
                     
     <li>
-    <a href="index.rst" id="sourcelink">Source</a>
+    <a href="../mongoose-%2B-heroku-%2B-mlab/index.rst" id="sourcelink">Source</a>
     </li>
 
                 
@@ -83,47 +89,64 @@ C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Use">
         <div class="row">
             
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Remembering Mongo</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="../mongoose-%2B-heroku-%2B-mlab/" class="u-url">Mongoose + Heroku + mLab</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     <a href="../../authors/alhern/">Alhern</a>
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-06-14T16:15:08+02:00" itemprop="datePublished" title="2017-06-14 16:15">2017-06-14 16:15</time></a></p>
+            <p class="dateline"><a href="../mongoose-%2B-heroku-%2B-mlab/" rel="bookmark"><time class="published dt-published" datetime="2017-06-28T00:57:17+02:00" itemprop="datePublished" title="2017-06-28 00:57">2017-06-28 00:57</time></a></p>
                 <p class="commentline">
         
 
 
             
         </p>
-<p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
+<p class="sourceline"><a href="../mongoose-%2B-heroku-%2B-mlab/index.rst" class="sourcelink">Source</a></p>
 
         </div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div>
-<p>Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
-Here's for Windows.</p>
-<p>First:</p>
+    <ol class="arabic">
+<li>
+<p class="first">Configurate Heroku with:</p>
 <pre class="literal-block">
-C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Users\[name]\mongo-data
+heroku config:set MONGOLAB_URI=mongodb://[username]:[password]@xx000000.mlab.com:00000/[project-name]
 </pre>
-<p>Then simply:</p>
+</li>
+<li>
+<p class="first">Add to app.js:</p>
 <pre class="literal-block">
-C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe
+const mongodbUri = process.env.MONGOLAB_URI;
+
+mongoose.connect(mongodbUri, (err, res) =&gt; {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('success!!!!!!!!!');
+    }
+});
 </pre>
+</li>
+<li>
+<p class="first">At the bottom:</p>
+<pre class="literal-block">
+const port = process.env.PORT
+
+app.listen(process.env.PORT);
+</pre>
+</li>
+</ol>
 </div>
-    </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/mongo/" rel="tag">mongo</a></li>
+<li><a class="tag p-category" href="../../categories/heroku/" rel="tag">heroku</a></li>
+            <li><a class="tag p-category" href="../../categories/mlab/" rel="tag">mlab</a></li>
+            <li><a class="tag p-category" href="../../categories/mongoose/" rel="tag">mongoose</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../welcome-to-nikola/" rel="prev" title="Welcome to Nikola">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../mongoose-%2B-heroku-%2B-mlab/" rel="next" title="Mongoose + Heroku + mLab">Next post</a>
+                <a href="../remembering-mongo/" rel="prev" title="Remembering Mongo">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
