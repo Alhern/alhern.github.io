@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://alhern.github.io/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/2012/</loc>
@@ -18,24 +18,16 @@
   <lastmod>2018-03-17T17:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://alhern.github.io/2018/</loc>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://alhern.github.io/archive.html</loc>
-  <lastmod>2018-03-17T17:41:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/authors/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/authors/alhern/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/authors/roberto-alsina/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/</loc>
-  <lastmod>2018-03-17T17:25:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/blog/</loc>
@@ -46,16 +38,16 @@
   <lastmod>2018-03-17T15:06:00Z</lastmod>
  </url>
  <url>
-  <loc>https://alhern.github.io/categories/demo/</loc>
-  <lastmod>2018-03-17T15:06:00Z</lastmod>
- </url>
- <url>
   <loc>https://alhern.github.io/categories/github/</loc>
   <lastmod>2018-03-17T17:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/heroku/</loc>
   <lastmod>2018-03-17T17:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/categories/hexo/</loc>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/mlab/</loc>
@@ -83,7 +75,7 @@
  </url>
  <url>
   <loc>https://alhern.github.io/fr/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/2012/</loc>
@@ -94,24 +86,16 @@
   <lastmod>2018-03-17T17:13:00Z</lastmod>
  </url>
  <url>
+  <loc>https://alhern.github.io/fr/2018/</loc>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://alhern.github.io/fr/archive.html</loc>
-  <lastmod>2018-03-17T17:42:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/fr/authors/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/fr/authors/alhern/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/fr/authors/roberto-alsina/</loc>
-  <lastmod>2018-03-17T17:13:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/</loc>
-  <lastmod>2018-03-17T17:25:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/blog/</loc>
@@ -122,16 +106,16 @@
   <lastmod>2018-03-17T15:06:00Z</lastmod>
  </url>
  <url>
-  <loc>https://alhern.github.io/fr/categories/demo/</loc>
-  <lastmod>2018-03-17T15:06:00Z</lastmod>
- </url>
- <url>
   <loc>https://alhern.github.io/fr/categories/github/</loc>
   <lastmod>2018-03-17T17:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/heroku/</loc>
   <lastmod>2018-03-17T17:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/fr/categories/hexo/</loc>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/mlab/</loc>
@@ -241,6 +225,11 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/pages/theming/" />
  </url>
  <url>
+  <loc>https://alhern.github.io/fr/posts/from-hexo-to-nikola/</loc>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/from-hexo-to-nikola/" />
+ </url>
+ <url>
   <loc>https://alhern.github.io/fr/posts/mongoose-%2B-heroku-%2B-mlab/</loc>
   <lastmod>2018-03-17T17:20:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/mongoose-%2B-heroku-%2B-mlab/" />
@@ -261,10 +250,6 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/renouveau/" />
  </url>
  <url>
-  <loc>https://alhern.github.io/fr/posts/welcome-to-nikola/</loc>
-  <lastmod>2018-03-17T15:06:00Z</lastmod>
- </url>
- <url>
   <loc>https://alhern.github.io/galleries/</loc>
   <lastmod>2018-03-17T15:06:00Z</lastmod>
  </url>
@@ -282,7 +267,7 @@
  </url>
  <url>
   <loc>https://alhern.github.io/listings/hello.py.html</loc>
-  <lastmod>2018-03-17T17:41:00Z</lastmod>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/pages/about-nikola/</loc>
@@ -345,6 +330,10 @@
   <lastmod>2018-03-17T15:07:00Z</lastmod>
  </url>
  <url>
+  <loc>https://alhern.github.io/posts/from-hexo-to-nikola/</loc>
+  <lastmod>2018-03-17T17:58:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://alhern.github.io/posts/mongoose-%2B-heroku-%2B-mlab/</loc>
   <lastmod>2018-03-17T17:20:00Z</lastmod>
  </url>
@@ -359,9 +348,5 @@
  <url>
   <loc>https://alhern.github.io/posts/renouveau/</loc>
   <lastmod>2018-03-17T17:42:00Z</lastmod>
- </url>
- <url>
-  <loc>https://alhern.github.io/posts/welcome-to-nikola/</loc>
-  <lastmod>2018-03-17T15:07:00Z</lastmod>
  </url>
 </urlset>
