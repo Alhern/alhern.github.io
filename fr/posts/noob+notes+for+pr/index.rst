@@ -9,11 +9,13 @@
 
 
 A simple reminder for PRs:
+
 1. Fork.
 2. Clone.
 3. ``git check out -b [somefeature]``
 4. Edit the code.
 5. ``git commit -a -m [commitmessage]``
 6. ``git push --set-upstream origin [somefeature]``
+
 
 Et voilà.
