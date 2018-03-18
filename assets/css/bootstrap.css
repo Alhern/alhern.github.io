@@ -242,6 +242,7 @@ th {
   }
   .navbar {
     display: none;
+    font-size: 12px;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -4171,6 +4172,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  font-size: 12px;
 }
 @media (min-width: 768px) {
   .navbar {
