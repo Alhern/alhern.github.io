@@ -739,6 +739,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.navbar {
+	font-size: 12px;
+}
+
 .metadata {
 	color: #767f85;
 }
