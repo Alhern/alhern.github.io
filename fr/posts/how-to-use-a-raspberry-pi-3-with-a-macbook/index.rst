@@ -1,7 +1,7 @@
 .. title: How to use a Raspberry Pi 3 with a Macbook
 .. slug: how-to-use-a-raspberry-pi-3-with-a-macbook
 .. date: 2018-03-24 20:25:37 UTC+01:00
-.. tags: raspberry pi, tutorial, draft
+.. tags: raspberry pi, tutorial
 .. category: Raspberry Pi
 .. link: 
 .. description: 
@@ -39,6 +39,7 @@ Setting up your Pi
 	:align: center
 
 
+
 Start by downloading `Raspbian Stretch with Desktop <https://www.raspberrypi.org/downloads/raspbian/>`_ and also `SD Memory Card Formatter <https://www.sdcard.org/downloads/formatter_4/index.html>`_.
 
 Raspbian might take a bit to download so let's take care of your SD card in the meantime: 
@@ -60,28 +61,32 @@ And now it's finally time to start our Pi.
 	:alt: Raspberry Pi 3 Model B with heatsinks
 	:align: center
 
+
 Unplug your SD card again and slide it into your Pi, plug your Ethernet cable from your laptop to your Pi, and lastly: power it up!
 
 You should see red and green lights, now wait a few minutes for your Pi to boot properly. It won't take as long next time.
 
 It's now time to open your console and ping that Pi like this:
 
-``$ ping raspberrypi.local``
+.. code:: text
+	$ ping raspberrypi.local
 
 You're gonna see something like this:
 
-``PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes``
-``Request timeout for icmp_seq 0``
-``64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms``
-``64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms``
-``64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms``
+.. code:: text
+	PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
+	Request timeout for icmp_seq 0``
+	64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
+	64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
+	64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms
 
 Cancel it with Ctrl + C.
 
 Congratulations, your Pi is here and ready to be used!
 Grab her IP (numbers in XX.XXX.XXX.XX), and type this:
 
-``$ ssh pi@XX.XXX.XXX.XX``
+.. code:: text
+	$ ssh pi@XX.XXX.XXX.XX
 
 Don't forget, your login is **pi** and the password is **raspberry**
 
@@ -89,7 +94,8 @@ Do say "yes" when asked `Are you sure you want to continue connecting (yes/no)?`
 
 Now that you're in the Pi you should now see this:
 
-``pi@raspberrypi:~ $``
+.. code:: text
+	pi@raspberrypi:~ $
 
 Feel free to explore the configuration using sudo ``raspi-config``
 

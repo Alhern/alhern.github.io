@@ -11,7 +11,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (fr)" href="../../fr/rss.xml">
 <link rel="canonical" href="https://alhern.github.io/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Alhern">
-<meta name="robots" content="noindex">
+<link rel="prev" href="../from-hexo-to-nikola/" title="From Hexo To Nikola" type="text/html">
 <meta property="og:site_name" content="A quality noob blog">
 <meta property="og:title" content="How to use a Raspberry Pi 3 with a Macbook">
 <meta property="og:url" content="https://alhern.github.io/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/">
@@ -136,21 +136,57 @@ Etcher will take care of safely flashing your formatted SD card with Raspbian's 
 <img alt="Raspberry Pi 3 Model B with heatsinks" class="align-center" src="../../images/pi2.PNG"><p>Unplug your SD card again and slide it into your Pi, plug your Ethernet cable from your laptop to your Pi, and lastly: power it up!</p>
 <p>You should see red and green lights, now wait a few minutes for your Pi to boot properly. It won't take as long next time.</p>
 <p>It's now time to open your console and ping that Pi like this:</p>
-<p><tt class="docutils literal">$ ping raspberrypi.local</tt></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 62)</p>
+<p>Error in "code" directive:
+maximum 1 argument(s) allowed, 4 supplied.</p>
+<pre class="literal-block">
+.. code:: text
+        $ ping raspberrypi.local
+
+</pre>
+</div>
 <p>You're gonna see something like this:</p>
-<p><tt class="docutils literal">PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes</tt>
-<tt class="docutils literal">Request timeout for icmp_seq 0</tt>
-<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms</tt>
-<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms</tt>
-<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms</tt></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 67)</p>
+<p>Error in "code" directive:
+maximum 1 argument(s) allowed, 36 supplied.</p>
+<pre class="literal-block">
+.. code:: text
+        PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
+        Request timeout for icmp_seq 0``
+        64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
+        64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
+        64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms
+
+</pre>
+</div>
 <p>Cancel it with Ctrl + C.</p>
 <p>Congratulations, your Pi is here and ready to be used!
 Grab her IP (numbers in XX.XXX.XXX.XX), and type this:</p>
-<p><tt class="docutils literal">$ ssh pi@XX.XXX.XXX.XX</tt></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 79)</p>
+<p>Error in "code" directive:
+maximum 1 argument(s) allowed, 4 supplied.</p>
+<pre class="literal-block">
+.. code:: text
+        $ ssh pi@XX.XXX.XXX.XX
+
+</pre>
+</div>
 <p>Don't forget, your login is <strong>pi</strong> and the password is <strong>raspberry</strong></p>
 <p>Do say "yes" when asked <cite>Are you sure you want to continue connecting (yes/no)?</cite> and <strong>welcome to your Raspberry Pi</strong>!</p>
 <p>Now that you're in the Pi you should now see this:</p>
-<p><tt class="docutils literal">pi@raspberrypi:~ $</tt></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 88)</p>
+<p>Error in "code" directive:
+maximum 1 argument(s) allowed, 3 supplied.</p>
+<pre class="literal-block">
+.. code:: text
+        pi@raspberrypi:~ $
+
+</pre>
+</div>
 <p>Feel free to explore the configuration using sudo <tt class="docutils literal"><span class="pre">raspi-config</span></tt></p>
 <p>Make sure you enable <strong>VNC</strong> in the interface menu.</p>
 </div>
@@ -164,6 +200,11 @@ Grab her IP (numbers in XX.XXX.XXX.XX), and type this:</p>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/raspberry-pi/" rel="tag">raspberry pi</a></li>
             <li><a class="tag p-category" href="../../categories/tutorial/" rel="tag">tutorial</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../from-hexo-to-nikola/" rel="prev" title="From Hexo To Nikola">Previous post</a>
+            </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
         
