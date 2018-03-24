@@ -1,7 +1,7 @@
 .. title: How to use a Raspberry Pi 3 with a Macbook
 .. slug: how-to-use-a-raspberry-pi-3-with-a-macbook
 .. date: 2018-03-24 20:25:37 UTC+01:00
-.. tags: raspberry pi, tutorial, draft
+.. tags: raspberry pi, tutorial
 .. category: Raspberry Pi
 .. link: 
 .. description: 
@@ -39,6 +39,7 @@ Setting up your Pi
 	:align: center
 
 
+
 Start by downloading `Raspbian Stretch with Desktop <https://www.raspberrypi.org/downloads/raspbian/>`_ and also `SD Memory Card Formatter <https://www.sdcard.org/downloads/formatter_4/index.html>`_.
 
 Raspbian might take a bit to download so let's take care of your SD card in the meantime: 
@@ -59,6 +60,7 @@ And now it's finally time to start our Pi.
 .. image:: /images/pi2.PNG
 	:alt: Raspberry Pi 3 Model B with heatsinks
 	:align: center
+
 
 Unplug your SD card again and slide it into your Pi, plug your Ethernet cable from your laptop to your Pi, and lastly: power it up!
 
