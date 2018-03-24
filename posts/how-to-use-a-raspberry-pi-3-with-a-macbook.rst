@@ -66,14 +66,12 @@ Unplug your SD card again and slide it into your Pi, plug your Ethernet cable fr
 
 You should see red and green lights, now wait a few minutes for your Pi to boot properly. It won't take as long next time.
 
-It's now time to open your console and ping that Pi like this:
+It's now time to open your console and ping that Pi like this:::
 
-::
 	$ ping raspberrypi.local
 
-You're gonna see something like this:
+You're gonna see something like this:::
 
-::
 	PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
 	Request timeout for icmp_seq 0``
 	64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
@@ -83,18 +81,16 @@ You're gonna see something like this:
 Cancel it with Ctrl + C.
 
 Congratulations, your Pi is here and ready to be used!
-Grab her IP (numbers in XX.XXX.XXX.XX), and type this:
+Grab her IP (numbers in XX.XXX.XXX.XX), and type this:::
 
-::
 	$ ssh pi@XX.XXX.XXX.XX
 
 Don't forget, your login is **pi** and the password is **raspberry**
 
 Do say "yes" when asked `Are you sure you want to continue connecting (yes/no)?` and **welcome to your Raspberry Pi**!
 
-Now that you're in the Pi you should now see this:
+Now that you're in the Pi you should now see this:::
 
-::
 	pi@raspberrypi:~ $
 
 Feel free to explore the configuration using sudo ``raspi-config``
