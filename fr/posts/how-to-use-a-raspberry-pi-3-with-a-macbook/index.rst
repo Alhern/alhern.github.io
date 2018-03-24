@@ -1,7 +1,7 @@
 .. title: How to use a Raspberry Pi 3 with a Macbook
 .. slug: how-to-use-a-raspberry-pi-3-with-a-macbook
 .. date: 2018-03-24 20:25:37 UTC+01:00
-.. tags: raspberry pi, tutorial
+.. tags: raspberry pi, tutorial, draft
 .. category: Raspberry Pi
 .. link: 
 .. description: 

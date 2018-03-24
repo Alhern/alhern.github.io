@@ -11,7 +11,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (en)" href="rss.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS (fr)" href="fr/rss.xml">
 <link rel="canonical" href="https://alhern.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/how-to-use-a-raspberry-pi-3-with-a-macbook/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/from-hexo-to-nikola/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -78,76 +78,7 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/how-to-use-a-raspberry-pi-3-with-a-macbook/" class="u-url">How to use a Raspberry Pi 3 with a Macbook</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Alhern
-            </span></p>
-            <p class="dateline"><a href="posts/how-to-use-a-raspberry-pi-3-with-a-macbook/" rel="bookmark"><time class="published dt-published" datetime="2018-03-24T20:25:37+01:00" title="2018-03-24 20:25">2018-03-24 20:25</time></a></p>
-                <p class="commentline">
-        
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>You have a Raspberry Pi 3 and you don't want to use an extra monitor/keyboard/mouse when you have a Macbook on hand. Good, me neither.</p>
-<p>Well, great news: using a Macbook with a Raspberry Pi is very easy.</p>
-<p>Here's the list of what I used to do this:</p>
-<ul class="simple">
-<li><strong>Raspberry Pi 3 Model B</strong></li>
-<li><strong>Old unibody Macbook</strong></li>
-<li><strong>32Go class 10 SD micro card + USB adapter</strong></li>
-<li><strong>Ethernet cable</strong></li>
-<li><strong>5V 3A power supply</strong></li>
-<li>3 heatsinks</li>
-<li>1 fan</li>
-<li>a transparent plastic case</li>
-</ul>
-<p>You really only need what is bolded.
-Even then you don't need a 32Go SD card, make sure it's at least <strong>8Go</strong> though.</p>
-<p>Now let's get to it.</p>
-<div class="section" id="setting-up-your-pi">
-<h2>Setting up your Pi</h2>
-<img alt="Raspberry Pi 3 Model B" class="align-center" src="images/pi1.PNG"><p>Start by downloading <a class="reference external" href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Stretch with Desktop</a> and also <a class="reference external" href="https://www.sdcard.org/downloads/formatter_4/index.html">SD Memory Card Formatter</a>.</p>
-<p>Raspbian might take a bit to download so let's take care of your SD card in the meantime:</p>
-<p>Plug it into your Macbook using an adapter, open SD Memory Card Formatter, select your card and click on "<strong>Overwrite Format</strong>".</p>
-<p>Once it's done, you're going to download <a class="reference external" href="https://etcher.io/">Etcher</a>.
-Etcher will take care of safely flashing your formatted SD card with Raspbian's image.</p>
-<p>Once Raspbian is downloaded, you won't even need to unzip it you can just <strong>slide the zip file into Etcher</strong>, make sure your SD card is selected (should be automatic) and click on Flash!</p>
-<p>Now that this is done, you're going to open TextEdit, type anything in it (or nothing at all), simply make sure that you save it using "<strong>ssh</strong>" as a name, and that you <span class="underline">don't save it as a ".txt" file</span>.</p>
-<p>Unplug your SD card and plug it back in. It should now be named "boot". Put the "ssh" file you just created in it.</p>
-<p>And now it's finally time to start our Pi.</p>
-<img alt="Raspberry Pi 3 Model B with heatsinks" class="align-center" src="images/pi2.PNG"><p>Unplug your SD card again and slide it into your Pi, plug your Ethernet cable from your laptop to your Pi, and lastly: power it up!</p>
-<p>You should see red and green lights, now wait a few minutes for your Pi to boot properly. It won't take as long next time.</p>
-<p>It's now time to open your console and ping that Pi like this:</p>
-<p><tt class="docutils literal">$ ping raspberrypi.local</tt></p>
-<p>You're gonna see something like this:</p>
-<p><tt class="docutils literal">PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes</tt>
-<tt class="docutils literal">Request timeout for icmp_seq 0</tt>
-<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms</tt>
-<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms</tt>
-<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms</tt></p>
-<p>Cancel it with Ctrl + C.</p>
-<p>Congratulations, your Pi is here and ready to be used!
-Grab her IP (numbers in XX.XXX.XXX.XX), and type this:</p>
-<p><tt class="docutils literal">$ ssh pi@XX.XXX.XXX.XX</tt></p>
-<p>Don't forget, your login is <strong>pi</strong> and the password is <strong>raspberry</strong></p>
-<p>Do say "yes" when asked <cite>Are you sure you want to continue connecting (yes/no)?</cite> and <strong>welcome to your Raspberry Pi</strong>!</p>
-<p>Now that you're in the Pi you should now see this:</p>
-<p><tt class="docutils literal">pi@raspberrypi:~ $</tt></p>
-<p>Feel free to explore the configuration using sudo <tt class="docutils literal"><span class="pre">raspi-config</span></tt></p>
-<p>Make sure you enable <strong>VNC</strong> in the interface menu.</p>
-</div>
-<div class="section" id="using-your-macbook">
-<h2>Using your Macbook</h2>
-<p>You now need to download <a class="reference external" href="https://www.realvnc.com/en/connect/download/viewer/">VNC Viewer</a> on your laptop.</p>
-<p>Open it, enter your Pi's IP address and... That's it. You now have access to the Pi's graphical interface on your Macbook.</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/from-hexo-to-nikola/" class="u-url">From Hexo To Nikola</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/from-hexo-to-nikola/" class="u-url">From Hexo To Nikola</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Alhern
