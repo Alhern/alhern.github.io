@@ -25,26 +25,27 @@ Here's the list of what I used to do this:
 * 1 fan
 * a transparent plastic case
 
-You really only need what is bolded.
+You really only need what is bolded. 
+Even then you don't need a 32Go SD card, make sure it's at least **8Go** though.
 
 Now let's get to it.
 
-====
+==================
 Setting up your Pi
-====
+==================
 
 .. image:: /images/pi1.PNG
 	:alt: Raspberry Pi 3 Model B
 	:align: center
 
 
-Start by downloading [Raspbian Stretch with Desktop](https://www.raspberrypi.org/downloads/raspbian/) and also [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter_4/index.html).
+Start by downloading `Raspbian Stretch with Desktop <https://www.raspberrypi.org/downloads/raspbian/>`_ and also `SD Memory Card Formatter <https://www.sdcard.org/downloads/formatter_4/index.html>`_.
 
 Raspbian might take a bit to download so let's take care of your SD card in the meantime: 
 
 Plug it into your Macbook using an adapter, open SD Memory Card Formatter, select your card and click on "**Overwrite Format**".
 
-Once it's done, you're going to download [Etcher](https://etcher.io/).
+Once it's done, you're going to download `Etcher <https://etcher.io/>`_.
 Etcher will take care of safely flashing your formatted SD card with Raspbian's image.
 
 Once Raspbian is downloaded, you won't even need to unzip it you can just **slide the zip file into Etcher**, make sure your SD card is selected (should be automatic) and click on Flash!
@@ -65,23 +66,22 @@ You should see red and green lights, now wait a few minutes for your Pi to boot 
 
 It's now time to open your console and ping that Pi like this:
 
-`$ ping raspberrypi.local`
+``$ ping raspberrypi.local``
 
 You're gonna see something like this:
 
-`PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
-Request timeout for icmp_seq 0
-64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
-64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
-64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms
-64 bytes from XX.XXX.XXX.XX: icmp_seq=4 ttl=64 time=1.456 ms`
+``PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes``
+``Request timeout for icmp_seq 0``
+``64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms``
+``64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms``
+``64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms``
 
 Cancel it with Ctrl + C.
 
 Congratulations, your Pi is here and ready to be used!
 Grab her IP (numbers in XX.XXX.XXX.XX), and type this:
 
-`$ ssh pi@XX.XXX.XXX.XX`
+``$ ssh pi@XX.XXX.XXX.XX``
 
 Don't forget, your login is **pi** and the password is **raspberry**
 
@@ -89,17 +89,17 @@ Do say "yes" when asked `Are you sure you want to continue connecting (yes/no)?`
 
 Now that you're in the Pi you should now see this:
 
-`pi@raspberrypi:~ $`
+``pi@raspberrypi:~ $``
 
-Feel free to explore the configuration using sudo `raspi-config`
+Feel free to explore the configuration using sudo ``raspi-config``
 
 Make sure you enable **VNC** in the interface menu. 
 
-====
+==================
 Using your Macbook
-====
+==================
 
-You now need to download [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your laptop.
+You now need to download `VNC Viewer <https://www.realvnc.com/en/connect/download/viewer/>`_ on your laptop.
 
 Open it, enter your Pi's IP address and... That's it. You now have access to the Pi's graphical interface on your Macbook.
 

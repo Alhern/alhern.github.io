@@ -105,23 +105,15 @@
 <li>1 fan</li>
 <li>a transparent plastic case</li>
 </ul>
-<p>You really only need what is bolded.</p>
+<p>You really only need what is bolded.
+Even then you don't need a 32Go SD card, make sure it's at least <strong>8Go</strong> though.</p>
 <p>Now let's get to it.</p>
 <div class="section" id="setting-up-your-pi">
 <h2>Setting up your Pi</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 23)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-====
-Setting up your Pi
-====
-</pre>
-</div>
-<img alt="Raspberry Pi 3 Model B" class="align-center" src="images/pi1.PNG"><p>Start by downloading [Raspbian Stretch with Desktop](<a class="reference external" href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a>) and also [SD Memory Card Formatter](<a class="reference external" href="https://www.sdcard.org/downloads/formatter_4/index.html">https://www.sdcard.org/downloads/formatter_4/index.html</a>).</p>
+<img alt="Raspberry Pi 3 Model B" class="align-center" src="images/pi1.PNG"><p>Start by downloading <a class="reference external" href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Stretch with Desktop</a> and also <a class="reference external" href="https://www.sdcard.org/downloads/formatter_4/index.html">SD Memory Card Formatter</a>.</p>
 <p>Raspbian might take a bit to download so let's take care of your SD card in the meantime:</p>
 <p>Plug it into your Macbook using an adapter, open SD Memory Card Formatter, select your card and click on "<strong>Overwrite Format</strong>".</p>
-<p>Once it's done, you're going to download [Etcher](<a class="reference external" href="https://etcher.io/">https://etcher.io/</a>).
+<p>Once it's done, you're going to download <a class="reference external" href="https://etcher.io/">Etcher</a>.
 Etcher will take care of safely flashing your formatted SD card with Raspbian's image.</p>
 <p>Once Raspbian is downloaded, you won't even need to unzip it you can just <strong>slide the zip file into Etcher</strong>, make sure your SD card is selected (should be automatic) and click on Flash!</p>
 <p>Now that this is done, you're going to open TextEdit, type anything in it (or nothing at all), simply make sure that you save it using "<strong>ssh</strong>" as a name, and that you <span class="underline">don't save it as a ".txt" file</span>.</p>
@@ -130,37 +122,27 @@ Etcher will take care of safely flashing your formatted SD card with Raspbian's 
 <img alt="Raspberry Pi 3 Model B with heatsinks" class="align-center" src="images/pi2.PNG"><p>Unplug your SD card again and slide it into your Pi, plug your Ethernet cable from your laptop to your Pi, and lastly: power it up!</p>
 <p>You should see red and green lights, now wait a few minutes for your Pi to boot properly. It won't take as long next time.</p>
 <p>It's now time to open your console and ping that Pi like this:</p>
-<p><cite>$ ping raspberrypi.local</cite></p>
+<p><tt class="docutils literal">$ ping raspberrypi.local</tt></p>
 <p>You're gonna see something like this:</p>
-<p><cite>PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
-Request timeout for icmp_seq 0
-64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
-64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
-64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms
-64 bytes from XX.XXX.XXX.XX: icmp_seq=4 ttl=64 time=1.456 ms</cite></p>
+<p><tt class="docutils literal">PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes</tt>
+<tt class="docutils literal">Request timeout for icmp_seq 0</tt>
+<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms</tt>
+<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms</tt>
+<tt class="docutils literal">64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms</tt></p>
 <p>Cancel it with Ctrl + C.</p>
 <p>Congratulations, your Pi is here and ready to be used!
 Grab her IP (numbers in XX.XXX.XXX.XX), and type this:</p>
-<p><cite>$ ssh pi@XX.XXX.XXX.XX</cite></p>
+<p><tt class="docutils literal">$ ssh pi@XX.XXX.XXX.XX</tt></p>
 <p>Don't forget, your login is <strong>pi</strong> and the password is <strong>raspberry</strong></p>
 <p>Do say "yes" when asked <cite>Are you sure you want to continue connecting (yes/no)?</cite> and <strong>welcome to your Raspberry Pi</strong>!</p>
 <p>Now that you're in the Pi you should now see this:</p>
-<p><cite>pi@raspberrypi:~ $</cite></p>
-<p>Feel free to explore the configuration using sudo <cite>raspi-config</cite></p>
+<p><tt class="docutils literal">pi@raspberrypi:~ $</tt></p>
+<p>Feel free to explore the configuration using sudo <tt class="docutils literal"><span class="pre">raspi-config</span></tt></p>
 <p>Make sure you enable <strong>VNC</strong> in the interface menu.</p>
 </div>
 <div class="section" id="using-your-macbook">
 <h2>Using your Macbook</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 89)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-====
-Using your Macbook
-====
-</pre>
-</div>
-<p>You now need to download [VNC Viewer](<a class="reference external" href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a>) on your laptop.</p>
+<p>You now need to download <a class="reference external" href="https://www.realvnc.com/en/connect/download/viewer/">VNC Viewer</a> on your laptop.</p>
 <p>Open it, enter your Pi's IP address and... That's it. You now have access to the Pi's graphical interface on your Macbook.</p>
 </div>
 </div>
