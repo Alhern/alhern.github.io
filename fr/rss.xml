@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A quality noob blog</title><link>https://alhern.github.io/</link><description>Et élucubrations diverses.</description><atom:link href="https://alhern.github.io/fr/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><copyright>© 2018 &lt;a href="mailto:audev@protonmail.com"&gt;Alhern&lt;/a&gt; </copyright><lastBuildDate>Sat, 24 Mar 2018 22:01:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How to use a Raspberry Pi 3 with a Macbook</title><link>https://alhern.github.io/fr/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;You have a Raspberry Pi 3 and you don't want to use an extra monitor/keyboard/mouse when you have a Macbook on hand. Good, me neither.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A quality noob blog</title><link>https://alhern.github.io/</link><description>Et élucubrations diverses.</description><atom:link href="https://alhern.github.io/fr/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><copyright>© 2018 &lt;a href="mailto:audev@protonmail.com"&gt;Alhern&lt;/a&gt; </copyright><lastBuildDate>Sat, 24 Mar 2018 22:07:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How to use a Raspberry Pi 3 with a Macbook</title><link>https://alhern.github.io/fr/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;You have a Raspberry Pi 3 and you don't want to use an extra monitor/keyboard/mouse when you have a Macbook on hand. Good, me neither.&lt;/p&gt;
 &lt;p&gt;Well, great news: using a Macbook with a Raspberry Pi is very easy.&lt;/p&gt;
 &lt;p&gt;Here's the list of what I used to do this:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -31,57 +31,33 @@ Etcher will take care of safely flashing your formatted SD card with Raspbian's 
 &lt;p&gt;Unplug your SD card again and slide it into your Pi, plug your Ethernet cable from your laptop to your Pi, and lastly: power it up!&lt;/p&gt;
 &lt;p&gt;You should see red and green lights, now wait a few minutes for your Pi to boot properly. It won't take as long next time.&lt;/p&gt;
 &lt;p&gt;It's now time to open your console and ping that Pi like this:&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 62)&lt;/p&gt;
-&lt;p&gt;Error in "code" directive:
-maximum 1 argument(s) allowed, 4 supplied.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. code:: text
-        $ ping raspberrypi.local
-
-&lt;/pre&gt;
-&lt;/div&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;$ ping raspberrypi.local&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;You're gonna see something like this:&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 67)&lt;/p&gt;
-&lt;p&gt;Error in "code" directive:
-maximum 1 argument(s) allowed, 36 supplied.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. code:: text
-        PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
-        Request timeout for icmp_seq 0``
-        64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
-        64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
-        64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms
-
-&lt;/pre&gt;
-&lt;/div&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
+Request timeout for icmp_seq 0``
+64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
+64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
+64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;Cancel it with Ctrl + C.&lt;/p&gt;
 &lt;p&gt;Congratulations, your Pi is here and ready to be used!
 Grab her IP (numbers in XX.XXX.XXX.XX), and type this:&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 79)&lt;/p&gt;
-&lt;p&gt;Error in "code" directive:
-maximum 1 argument(s) allowed, 4 supplied.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. code:: text
-        $ ssh pi@XX.XXX.XXX.XX
-
-&lt;/pre&gt;
-&lt;/div&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;$ ssh &lt;a class="reference external" href="mailto:pi@XX.XXX.XXX.XX"&gt;pi@XX.XXX.XXX.XX&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;Don't forget, your login is &lt;strong&gt;pi&lt;/strong&gt; and the password is &lt;strong&gt;raspberry&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Do say "yes" when asked &lt;cite&gt;Are you sure you want to continue connecting (yes/no)?&lt;/cite&gt; and &lt;strong&gt;welcome to your Raspberry Pi&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;Now that you're in the Pi you should now see this:&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 88)&lt;/p&gt;
-&lt;p&gt;Error in "code" directive:
-maximum 1 argument(s) allowed, 3 supplied.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-.. code:: text
-        pi@raspberrypi:~ $
-
-&lt;/pre&gt;
-&lt;/div&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;::&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="reference external" href="mailto:pi@raspberrypi"&gt;pi@raspberrypi&lt;/a&gt;:~ $&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;Feel free to explore the configuration using sudo &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;raspi-config&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Make sure you enable &lt;strong&gt;VNC&lt;/strong&gt; in the interface menu.&lt;/p&gt;
 &lt;/div&gt;
