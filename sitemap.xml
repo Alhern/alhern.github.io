@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>https://alhern.github.io/archive.html</loc>
-  <lastmod>2018-03-17T22:36:00Z</lastmod>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/</loc>
-  <lastmod>2018-03-17T17:58:00Z</lastmod>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/blog/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>https://alhern.github.io/categories/cat_nikola/</loc>
   <lastmod>2018-03-17T15:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/categories/cat_raspberry-pi/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/categories/github/</loc>
@@ -74,6 +78,14 @@
   <lastmod>2018-03-17T15:06:00Z</lastmod>
  </url>
  <url>
+  <loc>https://alhern.github.io/categories/raspberry-pi/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/categories/tutorial/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://alhern.github.io/fr/</loc>
   <lastmod>2018-03-17T17:58:00Z</lastmod>
  </url>
@@ -91,11 +103,11 @@
  </url>
  <url>
   <loc>https://alhern.github.io/fr/archive.html</loc>
-  <lastmod>2018-03-17T22:36:00Z</lastmod>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/</loc>
-  <lastmod>2018-03-17T17:58:00Z</lastmod>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/blog/</loc>
@@ -104,6 +116,10 @@
  <url>
   <loc>https://alhern.github.io/fr/categories/cat_nikola/</loc>
   <lastmod>2018-03-17T15:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/fr/categories/cat_raspberry-pi/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/categories/github/</loc>
@@ -140,6 +156,14 @@
  <url>
   <loc>https://alhern.github.io/fr/categories/python/</loc>
   <lastmod>2018-03-17T15:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/fr/categories/raspberry-pi/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/fr/categories/tutorial/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/fr/galleries/</loc>
@@ -228,6 +252,11 @@
   <loc>https://alhern.github.io/fr/posts/from-hexo-to-nikola/</loc>
   <lastmod>2018-03-17T17:58:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/from-hexo-to-nikola/" />
+ </url>
+ <url>
+  <loc>https://alhern.github.io/fr/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://alhern.github.io/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/" />
  </url>
  <url>
   <loc>https://alhern.github.io/fr/posts/mongoose-%2B-heroku-%2B-mlab/</loc>
@@ -332,6 +361,10 @@
  <url>
   <loc>https://alhern.github.io/posts/from-hexo-to-nikola/</loc>
   <lastmod>2018-03-17T17:58:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://alhern.github.io/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</loc>
+  <lastmod>2018-03-24T21:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://alhern.github.io/posts/mongoose-%2B-heroku-%2B-mlab/</loc>

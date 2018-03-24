@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A quality noob blog</title><link>https://alhern.github.io/</link><description>Et élucubrations diverses.</description><atom:link href="https://alhern.github.io/fr/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><copyright>© 2018 &lt;a href="mailto:audev@protonmail.com"&gt;Alhern&lt;/a&gt; </copyright><lastBuildDate>Sat, 24 Mar 2018 21:17:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How to use a Raspberry Pi 3 with a Macbook</title><link>https://alhern.github.io/fr/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;You have a Raspberry Pi 3 and you don't want to use an extra monitor/keyboard/mouse when you have a Macbook on hand. Good, me neither.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A quality noob blog (Posts about raspberry pi)</title><link>https://alhern.github.io/</link><description></description><atom:link href="https://alhern.github.io/categories/raspberry-pi.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>© 2018 &lt;a href="mailto:audev@protonmail.com"&gt;Alhern&lt;/a&gt; </copyright><lastBuildDate>Sat, 24 Mar 2018 21:17:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How to use a Raspberry Pi 3 with a Macbook</title><link>https://alhern.github.io/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;You have a Raspberry Pi 3 and you don't want to use an extra monitor/keyboard/mouse when you have a Macbook on hand. Good, me neither.&lt;/p&gt;
 &lt;p&gt;Well, great news: using a Macbook with a Raspberry Pi is very easy.&lt;/p&gt;
 &lt;p&gt;Here's the list of what I used to do this:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -71,49 +71,4 @@ Using your Macbook
 &lt;/div&gt;
 &lt;p&gt;You now need to download [VNC Viewer](&lt;a class="reference external" href="https://www.realvnc.com/en/connect/download/viewer/"&gt;https://www.realvnc.com/en/connect/download/viewer/&lt;/a&gt;) on your laptop.&lt;/p&gt;
 &lt;p&gt;Open it, enter your Pi's IP address and... That's it. You now have access to the Pi's graphical interface on your Macbook.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://alhern.github.io/fr/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</guid><pubDate>Sat, 24 Mar 2018 19:25:37 GMT</pubDate></item><item><title>From Hexo To Nikola</title><link>https://alhern.github.io/fr/posts/from-hexo-to-nikola/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;I've decided to leave Hexo and try Nikola out, having a soft spot for Python.&lt;/p&gt;
-&lt;p&gt;Welp, so far so good. I have a lot left to config but I'm enjoying it so far. Installation was smooth, it's easy to use. Just great!&lt;/p&gt;&lt;/div&gt;</description><guid>https://alhern.github.io/fr/posts/from-hexo-to-nikola/</guid><pubDate>Sat, 17 Mar 2018 17:47:46 GMT</pubDate></item><item><title>Noob notes for PR</title><link>https://alhern.github.io/fr/posts/noob%2Bnotes%2Bfor%2Bpr/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;A simple reminder for PRs:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Fork.&lt;/li&gt;
-&lt;li&gt;Clone.&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;git check out &lt;span class="pre"&gt;-b&lt;/span&gt; [somefeature]&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;Edit the code.&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;git commit &lt;span class="pre"&gt;-a&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; [commitmessage]&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;git push &lt;span class="pre"&gt;--set-upstream&lt;/span&gt; origin [somefeature]&lt;/tt&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Et voilà.&lt;/p&gt;&lt;/div&gt;</description><guid>https://alhern.github.io/fr/posts/noob%2Bnotes%2Bfor%2Bpr/</guid><pubDate>Thu, 29 Jun 2017 20:02:57 GMT</pubDate></item><item><title>Mongoose + Heroku + mLab</title><link>https://alhern.github.io/fr/posts/mongoose-%2B-heroku-%2B-mlab/</link><dc:creator>Alhern</dc:creator><description>&lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p class="first"&gt;Configurate Heroku with:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-heroku config:set MONGOLAB_URI=mongodb://[username]:[password]@xx000000.mlab.com:00000/[project-name]
-&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Add to app.js:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-const mongodbUri = process.env.MONGOLAB_URI;
-
-mongoose.connect(mongodbUri, (err, res) =&amp;gt; {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log('success!!!!!!!!!');
-    }
-});
-&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;At the bottom:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-const port = process.env.PORT
-
-app.listen(process.env.PORT);
-&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description><guid>https://alhern.github.io/fr/posts/mongoose-%2B-heroku-%2B-mlab/</guid><pubDate>Tue, 27 Jun 2017 22:57:17 GMT</pubDate></item><item><title>Remembering Mongo</title><link>https://alhern.github.io/fr/posts/remembering-mongo/</link><dc:creator>Alhern</dc:creator><description>&lt;div&gt;&lt;p&gt;Just the basics so I don't have to scratch my noob head every time I start reworking on Mongo months later.
-Here's for Windows.&lt;/p&gt;
-&lt;p&gt;First:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath /Users\[name]\mongo-data
-&lt;/pre&gt;
-&lt;p&gt;Then simply:&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe
-&lt;/pre&gt;&lt;/div&gt;</description><guid>https://alhern.github.io/fr/posts/remembering-mongo/</guid><pubDate>Wed, 14 Jun 2017 14:15:08 GMT</pubDate></item><item><title>Renouveau</title><link>https://alhern.github.io/fr/posts/renouveau/</link><dc:creator>Alhern</dc:creator><description>&lt;p&gt;Au revoir Hexo, bonjour Nikola !&lt;/p&gt;</description><guid>https://alhern.github.io/fr/posts/renouveau/</guid><pubDate>Sat, 31 Mar 2012 02:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>raspberry pi</category><category>tutorial</category><guid>https://alhern.github.io/posts/how-to-use-a-raspberry-pi-3-with-a-macbook/</guid><pubDate>Sat, 24 Mar 2018 19:25:37 GMT</pubDate></item></channel></rss>
