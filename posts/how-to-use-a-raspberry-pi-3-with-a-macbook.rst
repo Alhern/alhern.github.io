@@ -66,22 +66,25 @@ You should see red and green lights, now wait a few minutes for your Pi to boot 
 
 It's now time to open your console and ping that Pi like this:
 
-``$ ping raspberrypi.local``
+.. code:: text
+	$ ping raspberrypi.local
 
 You're gonna see something like this:
 
-``PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes``
-``Request timeout for icmp_seq 0``
-``64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms``
-``64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms``
-``64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms``
+.. code:: text
+	PING raspberrypi.local (XX.XXX.XXX.XX): 56 data bytes
+	Request timeout for icmp_seq 0``
+	64 bytes from XX.XXX.XXX.XX: icmp_seq=1 ttl=64 time=1.472 ms
+	64 bytes from XX.XXX.XXX.XX: icmp_seq=2 ttl=64 time=1.492 ms
+	64 bytes from XX.XXX.XXX.XX: icmp_seq=3 ttl=64 time=1.547 ms
 
 Cancel it with Ctrl + C.
 
 Congratulations, your Pi is here and ready to be used!
 Grab her IP (numbers in XX.XXX.XXX.XX), and type this:
 
-``$ ssh pi@XX.XXX.XXX.XX``
+.. code:: text
+	$ ssh pi@XX.XXX.XXX.XX
 
 Don't forget, your login is **pi** and the password is **raspberry**
 
@@ -89,7 +92,8 @@ Do say "yes" when asked `Are you sure you want to continue connecting (yes/no)?`
 
 Now that you're in the Pi you should now see this:
 
-``pi@raspberrypi:~ $``
+.. code:: text
+	pi@raspberrypi:~ $
 
 Feel free to explore the configuration using sudo ``raspi-config``
 
